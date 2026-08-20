@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://bqh6taltcw71w"]
+
+[ext_resource type="Texture2D" uid="uid://cfw7lkauanets" path="res://assets/npcs/feelasprite.png" id="1_bq88k"]
+[ext_resource type="Script" uid="uid://d1ewn2wbh003x" path="res://scenes/feeladialouge.gd" id="1_d5mc0"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_1ab0c"]
+size = Vector3(4.9445343, 5.0230637, 2.8643532)
+
+[node name="Feela" type="Area3D" unique_id=1204259709]
+script = ExtResource("1_d5mc0")
+npc_portrait = "uid://cy1p85w2u3yow"
+
+[node name="Sprite3D" type="Sprite3D" parent="." unique_id=1139147434]
+billboard = 2
+texture = ExtResource("1_bq88k")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=2078121002]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.10922241, 0.5831604, -0.028320313)
+shape = SubResource("BoxShape3D_1ab0c")

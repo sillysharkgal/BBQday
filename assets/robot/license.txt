@@ -1,0 +1,11 @@
+Model Information:
+* title:	Robot
+* source:	https://sketchfab.com/3d-models/robot-5fed8e540fcb42eebcfb58863ec23d55
+* author:	narwha (https://sketchfab.com/narwha)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Robot" (https://sketchfab.com/3d-models/robot-5fed8e540fcb42eebcfb58863ec23d55) by narwha (https://sketchfab.com/narwha) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

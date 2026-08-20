@@ -1,0 +1,31 @@
+[gd_scene format=3 uid="uid://ddoqtbub8cf3e"]
+
+[ext_resource type="Script" uid="uid://eb7jr33twqae" path="res://scripts/PlayerMovement.gd" id="1_4flbx"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_onrkg"]
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_3vyb7"]
+
+[node name="Player" type="Node3D" unique_id=2106170590]
+
+[node name="CharacterBody3D" type="CharacterBody3D" parent="." unique_id=1273521887]
+script = ExtResource("1_4flbx")
+speed = 13.0
+sprintspeed = 13.0
+jump_velocity = 5.0
+interaction_distance = 8.0
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="CharacterBody3D" unique_id=772169004]
+shape = SubResource("CapsuleShape3D_onrkg")
+
+[node name="Head" type="Node3D" parent="CharacterBody3D" unique_id=2025744390]
+
+[node name="Camera3D" type="Camera3D" parent="CharacterBody3D/Head" unique_id=304525324]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.43701684, 0)
+
+[node name="InteractionRay" type="RayCast3D" parent="CharacterBody3D/Head/Camera3D" unique_id=776362826]
+target_position = Vector3(0, 0, -3)
+collide_with_areas = true
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="CharacterBody3D" unique_id=1627841126]
+mesh = SubResource("CapsuleMesh_3vyb7")

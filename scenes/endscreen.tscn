@@ -1,0 +1,49 @@
+[gd_scene format=3 uid="uid://chri14ww51wor"]
+
+[ext_resource type="Script" uid="uid://wp7fvxeya6an" path="res://scenes/endscreen.gd" id="1_cuen1"]
+[ext_resource type="AudioStream" uid="uid://omsun3q5c0ju" path="res://assets/sfx/wavedash.ppt.ogg" id="2_cuen1"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_5j82o"]
+font_size = 39
+font_color = Color(0, 1, 1, 1)
+
+[node name="Control" type="Control" unique_id=1572185392]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_cuen1")
+
+[node name="Background" type="ColorRect" parent="." unique_id=1763892516]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+color = Color(0, 0, 0, 1)
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=176207813]
+stream = ExtResource("2_cuen1")
+autoplay = true
+
+[node name="Label" type="Label" parent="." unique_id=1103946603]
+layout_mode = 1
+anchors_preset = 14
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_top = -72.5
+offset_bottom = 72.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "Hello, thanks for playing!
+Unfotunately Edeeva is very lazy and has not finished 
+BBQ day 2 despite an entire summer break.
+
+Maybe one day she will...
+
+For now, you can just press esc to close the game.
+bye!"
+label_settings = SubResource("LabelSettings_5j82o")
+horizontal_alignment = 1
+autowrap_mode = 2

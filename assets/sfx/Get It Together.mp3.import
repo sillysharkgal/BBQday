@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://w6vatdnb78as"
+path="res://.godot/imported/Get It Together.mp3-be407661925b9f8b9fa6107f88f41ee3.mp3str"
+
+[deps]
+
+source_file="res://assets/sfx/Get It Together.mp3"
+dest_files=["res://.godot/imported/Get It Together.mp3-be407661925b9f8b9fa6107f88f41ee3.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
