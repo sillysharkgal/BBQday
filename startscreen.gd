@@ -17,22 +17,6 @@ extends Control
 	$E4,
 	$V2
 ]
-
-const _DIALOG_CLASS = preload(
-	"res://addons/dialog_system/dialog.gd"
-)
-
-const _DIALOG_SYSTEM_SCENE = preload(
-	"res://addons/dialog_system/dialog_System.tscn"
-)
-
-const _DIALOG_INPUT_SCENE = preload(
-	"res://addons/dialog_system/input.tscn"
-)
-
-const _DIALOG_MENU_SCENE = preload(
-	"res://addons/dialog_system/menu.tscn"
-)
 			
 
 func _ready() -> void:
