@@ -1,0 +1,39 @@
+[gd_scene format=3 uid="uid://b4j4vew4qabeq"]
+
+[ext_resource type="Material" uid="uid://cjg4iv5se0hes" path="res://assets/materials/stone.tres" id="1_jsre6"]
+[ext_resource type="Script" uid="uid://c3ujouaj5dwi0" path="res://scripts/ButtonPuzzle.gd" id="2_rtit6"]
+[ext_resource type="AudioStream" uid="uid://drwdypx1l2nm1" path="res://assets/sfx/buttonclick.wav" id="3_ywcaw"]
+[ext_resource type="Texture2D" uid="uid://b4udwwvbkqdmr" path="res://assets/shapes/bleach.png" id="4_sejoc"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_45h1r"]
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_fasj1"]
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_1xt0e"]
+height = 0.53344727
+radius = 0.4140625
+
+[node name="Node3D" type="Node3D" unique_id=2096153093]
+
+[node name="Stand" type="MeshInstance3D" parent="." unique_id=1031637124]
+transform = Transform3D(1, 0, 0, 0, 1.5552777, 0, 0, 0, 1, 0, 0.31112635, 0)
+material_override = ExtResource("1_jsre6")
+mesh = SubResource("BoxMesh_45h1r")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="." unique_id=611249175]
+script = ExtResource("2_rtit6")
+
+[node name="Button" type="MeshInstance3D" parent="StaticBody3D" unique_id=244096192]
+transform = Transform3D(0.8, 0, 0, 0, 0.3, 0, 0, 0, 0.8, 0, 0.9786465, 0)
+mesh = SubResource("CylinderMesh_fasj1")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" unique_id=451399877]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.9908552, 0)
+shape = SubResource("CylinderShape3D_1xt0e")
+
+[node name="PressSFX" type="AudioStreamPlayer3D" parent="StaticBody3D" unique_id=145483513]
+stream = ExtResource("3_ywcaw")
+
+[node name="Sprite3D" type="Sprite3D" parent="." unique_id=1911513022]
+transform = Transform3D(0.1, 0, 0, 0, -4.371139e-09, -0.1, 0, 0.1, -4.371139e-09, 0.00085645914, 1.2812883, 0.046200573)
+texture = ExtResource("4_sejoc")

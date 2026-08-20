@@ -1,0 +1,54 @@
+[gd_scene format=3 uid="uid://dfr10wew0wmyf"]
+
+[ext_resource type="Material" uid="uid://daxhm6pos4hlk" path="res://assets/materials/Wood.tres" id="1_0j212"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_dk62a"]
+
+[node name="Node3D" type="Node3D" unique_id=1541705209]
+
+[node name="CSGCombiner3D" type="CSGCombiner3D" parent="." unique_id=422875074]
+
+[node name="Post1" type="CSGMesh3D" parent="CSGCombiner3D" unique_id=582775614]
+transform = Transform3D(0.65839046, 0, 0, 0, 7.695071, 0, 0, 0, 1, 0, 0, 0)
+material_override = ExtResource("1_0j212")
+mesh = SubResource("BoxMesh_dk62a")
+
+[node name="Post2" type="CSGMesh3D" parent="CSGCombiner3D" unique_id=1324069203]
+transform = Transform3D(0.3952945, 0, 0, 0, 6.933622, 0, 0, 0, 1, 0, -0.4076351, -1.1728383)
+material_override = ExtResource("1_0j212")
+mesh = SubResource("BoxMesh_dk62a")
+
+[node name="Post3" type="CSGMesh3D" parent="CSGCombiner3D" unique_id=1945148532]
+transform = Transform3D(0.3952945, 0, 0, 0, 6.723371, 0, 0, 0, 1, 0, -0.44538665, -2.3256316)
+material_override = ExtResource("1_0j212")
+mesh = SubResource("BoxMesh_dk62a")
+
+[node name="Post4" type="CSGMesh3D" parent="CSGCombiner3D" unique_id=285702654]
+transform = Transform3D(0.3952945, 0, 0, 0, 6.7505918, 0, 0, 0, 1, 0.0053081512, -0.38203835, -3.421908)
+material_override = ExtResource("1_0j212")
+mesh = SubResource("BoxMesh_dk62a")
+
+[node name="Post5" type="CSGMesh3D" parent="CSGCombiner3D" unique_id=1845023815]
+transform = Transform3D(0.3952945, 0, 0, 0, 6.9357643, 0, 0, 0, 1, 0, -0.25011432, -4.5395164)
+material_override = ExtResource("1_0j212")
+mesh = SubResource("BoxMesh_dk62a")
+
+[node name="Post6" type="CSGMesh3D" parent="CSGCombiner3D" unique_id=822636203]
+transform = Transform3D(0.3952945, 0, 0, 0, 6.952251, 0, 0, 0, 1, 0, -0.3222115, -5.703086)
+material_override = ExtResource("1_0j212")
+mesh = SubResource("BoxMesh_dk62a")
+
+[node name="Post7" type="CSGMesh3D" parent="CSGCombiner3D" unique_id=1688538383]
+transform = Transform3D(0.65839046, 0, 0, 0, 7.569916, 0, 0, 0, 1, 0, 0, -6.79778)
+material_override = ExtResource("1_0j212")
+mesh = SubResource("BoxMesh_dk62a")
+
+[node name="Top" type="CSGMesh3D" parent="CSGCombiner3D" unique_id=1838764716]
+transform = Transform3D(0.5378495, 0, 0, 0, -0.13986906, -0.9862641, 0, 9.221273, -0.0149597395, 0.03365016, 2.2114608, -3.4700742)
+material_override = ExtResource("1_0j212")
+mesh = SubResource("BoxMesh_dk62a")
+
+[node name="Bottom" type="CSGMesh3D" parent="CSGCombiner3D" unique_id=199570690]
+transform = Transform3D(0.5378495, 0, 0, 0, -0.13986906, -0.9862641, 0, 9.221273, -0.0149597395, 0, -3.0748298, -3.4700742)
+material_override = ExtResource("1_0j212")
+mesh = SubResource("BoxMesh_dk62a")

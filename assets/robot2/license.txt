@@ -1,0 +1,11 @@
+Model Information:
+* title:	Vintage Robot Toy
+* source:	https://sketchfab.com/3d-models/vintage-robot-toy-0454cbfcca314e6380fc770b69c75227
+* author:	berilbasak (https://sketchfab.com/berilbaska)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Vintage Robot Toy" (https://sketchfab.com/3d-models/vintage-robot-toy-0454cbfcca314e6380fc770b69c75227) by berilbasak (https://sketchfab.com/berilbaska) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

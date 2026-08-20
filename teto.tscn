@@ -1,0 +1,35 @@
+[gd_scene format=3 uid="uid://bv0semh2i35xw"]
+
+[ext_resource type="Script" uid="uid://c4edx4jm253p4" path="res://tetodialouge.gd" id="1_bvdsu"]
+[ext_resource type="Texture2D" uid="uid://coordpsk5r616" path="res://assets/npcs/Teto.webp" id="1_syo05"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_6lt68"]
+size = Vector3(1.2519531, 3.8739624, 1)
+
+[node name="Area3D" type="Area3D" unique_id=1485413831]
+script = ExtResource("1_bvdsu")
+normal_image = "uid://b7khhg0wy6gxl"
+happy_image = "uid://cola76kogcsp8"
+scared_image = "uid://bfr0lu0suqjc8"
+mad_image = "uid://0va8ixo6yp2q"
+voice1 = "uid://pbnxq1a8xenx"
+voice2 = "uid://ds7cnj5xueyot"
+voice3 = "uid://b25levb8gkn1r"
+voice4 = "uid://bav1vjbqnfrep"
+voice5 = "uid://b1a2jnr0r6qtt"
+voice6 = "uid://dwl20hxhcpof3"
+voice7 = "uid://ccfrkujpf2rqa"
+voice8 = "uid://p28efc18l4ua"
+voice9 = "uid://j5rtwefvghl"
+voice10 = "uid://bpq1kekw8hxk1"
+voice11 = "uid://bm04hg780uucb"
+voice12 = "uid://ch3dlne2pgomv"
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1886092927]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.12597656, 0.42129517, 0)
+shape = SubResource("BoxShape3D_6lt68")
+
+[node name="Sprite3D" type="Sprite3D" parent="." unique_id=731470384]
+transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, -0.15458512, 0, 0)
+billboard = 2
+texture = ExtResource("1_syo05")
