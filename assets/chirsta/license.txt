@@ -1,0 +1,11 @@
+Model Information:
+* title:	Chiikwa Hachiware
+* source:	https://sketchfab.com/3d-models/chiikwa-hachiware-ab6d8250b25d470eab186d86ddfbcc05
+* author:	Yang (https://sketchfab.com/bluepaint0218)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Chiikwa Hachiware" (https://sketchfab.com/3d-models/chiikwa-hachiware-ab6d8250b25d470eab186d86ddfbcc05) by Yang (https://sketchfab.com/bluepaint0218) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

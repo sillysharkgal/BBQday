@@ -1,0 +1,25 @@
+[gd_scene format=3 uid="uid://d2rl2bbplg1pw"]
+
+[ext_resource type="PackedScene" uid="uid://c5usv2jricb4x" path="res://assets/chirsta/scene.gltf" id="1_cmq0c"]
+[ext_resource type="Script" uid="uid://ccpscmtuqcsfh" path="res://assets/hachidialouge.gd" id="1_ges8n"]
+[ext_resource type="AudioStream" uid="uid://dw6jf8671lqb1" path="res://assets/npcs/HachiwareBeep.wav" id="2_ngnxu"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_ges8n"]
+radius = 1.5348315
+
+[node name="Hachi" type="RigidBody3D" unique_id=1819580605]
+gravity_scale = 3.0
+freeze = true
+script = ExtResource("1_ges8n")
+normal_image = "uid://baeej3lujidyb"
+happy_image = "uid://diix8ay7rgpfd"
+scared_image = "uid://bgx1j1u0eywc3"
+launch_strength = 20.0
+launch_up_strength = 2.0
+hachiwari_blip = ExtResource("2_ngnxu")
+
+[node name="Sketchfab_Scene" parent="." unique_id=426883474 instance=ExtResource("1_cmq0c")]
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, 0, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1862906507]
+shape = SubResource("SphereShape3D_ges8n")

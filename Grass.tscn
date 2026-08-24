@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://45xnmoheb5h3"]
+
+[ext_resource type="Script" uid="uid://k5141gbsfu8q" path="res://assets/glTF/touchgrass.gd" id="1_d2gna"]
+[ext_resource type="PackedScene" uid="uid://7tafi22dws5s" path="res://assets/glTF/Grass_Large_Extruded.gltf" id="2_po8e2"]
+[ext_resource type="AudioStream" uid="uid://dirscaoe7rnxx" path="res://assets/sfx/Success.ogg" id="3_po8e2"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_btrte"]
+size = Vector3(1.2486572, 1.144043, 0.8435974)
+
+[node name="GrassSpecial" type="Area3D" unique_id=1934241730]
+script = ExtResource("1_d2gna")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1764712392]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.10185695, 0.34905267, -0.10960388)
+shape = SubResource("BoxShape3D_btrte")
+
+[node name="Grass_Large_Extruded2" parent="." unique_id=443609294 instance=ExtResource("2_po8e2")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 0, 0)
+
+[node name="TouchSFX" type="AudioStreamPlayer3D" parent="." unique_id=1788975112]
+stream = ExtResource("3_po8e2")
